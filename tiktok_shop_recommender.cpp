@@ -83,9 +83,9 @@ int main() {
             cin >> categoryChoice;
  
             if (categoryChoice < 1 || categoryChoice > 4) {
-    cout << "Invalid input! '" << categoryChoice << "' is not a valid option. Please enter a number between 1 and 4.\n\n";
-              }
+            cout << "Invalid input! '" << categoryChoice << "' is not a valid option. Please enter a number between 1 and 4.\n\n";
             }
+         
         } while (categoryChoice < 1 || categoryChoice > 4);
  
         // Input validation for budget
@@ -102,6 +102,9 @@ int main() {
             }
         } while (budgetChoice < 1 || budgetChoice > 3);
  
+        // Confirm user's selections before showing result
+        cout << "\nYou selected category " << categoryChoice << " and budget range " << budgetChoice << "." << endl;
+
         // Call the recommendation function
         giveRecommendation(categoryChoice, budgetChoice);
  
