@@ -11,6 +11,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// Variables and functions declared below handle the TikTok Shop recommendation logic
  
 // Function to display recommendation based on category and budget
 void giveRecommendation(int category, int budget) {
