@@ -111,6 +111,7 @@ int main() {
     }
  
     cout << "Thank you for using TikTok Shop Recommendation Assistant!" << endl;
+    cout << "Have a great day shopping on TikTok Shop!" << endl;
  
     return 0;
 }
