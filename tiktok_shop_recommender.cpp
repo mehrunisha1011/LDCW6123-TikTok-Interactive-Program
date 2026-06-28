@@ -83,7 +83,8 @@ int main() {
             cin >> categoryChoice;
  
             if (categoryChoice < 1 || categoryChoice > 4) {
-                cout << "Invalid input! Please enter a number between 1 and 4.\n\n";
+    cout << "Invalid input! '" << categoryChoice << "' is not a valid option. Please enter a number between 1 and 4.\n\n";
+              }
             }
         } while (categoryChoice < 1 || categoryChoice > 4);
  
