@@ -64,6 +64,7 @@ int main() {
     int budgetChoice = 0;
     char tryAgain = 'y';
  cin.clear();
+ int recommendationCount = 0;
  
     cout << "================================================" << endl;
     cout << " TIKTOK SHOP PRODUCT RECOMMENDATION ASSISTANT" << endl;
@@ -109,7 +110,8 @@ int main() {
 
         // Call the recommendation function
         giveRecommendation(categoryChoice, budgetChoice);
- 
+        recommendationCount++;
+     
         // Ask if user wants to try again (testing multiple cases)
         cout << "\nWould you like to try another recommendation? (y/n): ";
         cin >> tryAgain;
@@ -117,6 +119,7 @@ int main() {
     }
  
     cout << "Thank you for using TikTok Shop Recommendation Assistant!" << endl;
+    cout << "Total recommendations given this session: " << recommendationCount << endl;
     cout << "Have a great day shopping on TikTok Shop!" << endl;
  
     return 0;
