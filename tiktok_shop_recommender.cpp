@@ -63,6 +63,7 @@ int main() {
     int categoryChoice = 0;
     int budgetChoice = 0;
     char tryAgain = 'y';
+ cin.clear();
  
     cout << "================================================" << endl;
     cout << " TIKTOK SHOP PRODUCT RECOMMENDATION ASSISTANT" << endl;
