@@ -69,6 +69,7 @@ int main() {
     cout << " TIKTOK SHOP PRODUCT RECOMMENDATION ASSISTANT" << endl;
     cout << "================================================" << endl;
     cout << "(Connected to Part 1: TikTok Disruptive Innovation)\n" << endl;
+    cout << "Answer the questions below to get a personalised shopping recommendation.\n" << endl;
  
     // Loop to allow multiple tests (User Experience & Testing marks)
     while (tryAgain == 'y' || tryAgain == 'Y') {
