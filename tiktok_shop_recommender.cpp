@@ -6,7 +6,7 @@
  * Description:
  * This program recommends a product category and a TikTok Shop feature
  * based on the user's shopping preference and budget range. It also
- * suggests a sample product and an estimated price range.
+ * suggests a sample product, an estimated price range, and a promo code.
  */
 
 #include <iostream>
@@ -19,15 +19,19 @@ void giveRecommendation(int category, int budget) {
 
     string productType;
     string tiktokTip;
+    string promoCode;
 
     // Sample product arrays for each category (index 0,1,2 matches budget 1,2,3)
-    string fashionItems[3]   = {"Basic T-Shirt", "Branded Sneakers", "Designer Handbag"};
-    string beautyItems[3]    = {"Face Mask Sheet", "Skincare Set", "Premium Makeup Kit"};
+    string fashionItems[3]     = {"Basic T-Shirt", "Branded Sneakers", "Designer Handbag"};
+    string beautyItems[3]      = {"Face Mask Sheet", "Skincare Set", "Premium Makeup Kit"};
     string electronicsItems[3] = {"Phone Case", "Wireless Earbuds", "Smartwatch"};
-    string foodItems[3]      = {"Snack Pack", "Coffee Bundle", "Gourmet Hamper"};
+    string foodItems[3]        = {"Snack Pack", "Coffee Bundle", "Gourmet Hamper"};
 
     // Estimated price range for each budget level
     string priceEstimate[3] = {"RM0 - RM30", "RM31 - RM100", "RM100 and above"};
+
+    // Promo codes for each budget level
+    string promoCodes[3] = {"TTSAVE10", "TTBUNDLE20", "TTPREMIUM30"};
 
     string sampleProduct;
 
@@ -66,6 +70,9 @@ void giveRecommendation(int category, int budget) {
         tiktokTip = "Explore the general TikTok Shop catalogue for more options.";
     }
 
+    // Get promo code matching the budget level
+    promoCode = promoCodes[budget - 1];
+
     // Output the recommendation
     cout << "\n----------------------------------------------" << endl;
     cout << "RECOMMENDATION RESULT" << endl;
@@ -74,6 +81,7 @@ void giveRecommendation(int category, int budget) {
     cout << "Sample Product            : " << sampleProduct << endl;
     cout << "Estimated Price Range     : " << priceEstimate[budget - 1] << endl;
     cout << "TikTok Shop Tip           : " << tiktokTip << endl;
+    cout << "Promo Code                : " << promoCode << " (apply at checkout for extra savings)" << endl;
     cout << "----------------------------------------------" << endl;
 }
 
@@ -143,4 +151,4 @@ int main() {
 
     return 0;
 }
- 
+
